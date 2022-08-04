@@ -523,6 +523,15 @@ section {
   padding-bottom: 1rem;
 }
 
+/*Contact Section*/
+.contact-content-con {
+  display: flex;
+  padding-top: 3.5rem;
+}
+.contact-content-con .left-contact {
+  flex: 2;
+}
+
 /*Independed components*/
 .btn-con {
   display: flex;
