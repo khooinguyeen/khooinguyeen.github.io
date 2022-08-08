@@ -1,6 +1,5 @@
 
-@media screen and(max-width: 600px) {
-    
+@media screen and(max-width: 600px) {    
 
     .about-container{
         grid-template-columns: 1fr;
@@ -19,12 +18,6 @@
     .timeline{
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
-    }
-
-    .about-stats{
-        .progress-bars{
-            grid-template-columns: 1fr;
-        }
     }
 
     .portfolios{
@@ -52,21 +45,6 @@
             }
         }
     }
-
-    .controls{
-        top: auto;
-        bottom: 0;
-        flex-direction: row;
-        justify-content: center;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        background-color: var(--color-grey-5);
-        .control{
-            margin: 1rem .3rem;
-        }
-    }
-    
 }
 
 @media screen and(max-width: 1432px){
@@ -162,5 +140,41 @@
     .header-content .left-header .image{
         margin: 0 auto;
         width: 90%;
+    }
+
+    .controls{
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey-5);
+        .control{
+            margin: .6rem 1rem !important;
+        }
+    }
+}
+
+@media screen and(max-width: 700px){
+    .section{
+        padding: 7rem 3rem;
+    }
+    .about-stats{
+        .progress-bars{
+            grid-template-columns: 1fr;
+        }
+    }
+    .main-title{
+        h2{
+            font-size: 3rem;
+            span{
+                font-size: 3rem;
+            }
+            .bg-text{
+                font-size: 4rem;
+            }
+        }
     }
 }
