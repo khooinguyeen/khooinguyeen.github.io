@@ -27,7 +27,7 @@
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
-  --color-grey-1: #6c7983;
+  --color-grey-1: #505960;
   --color-grey-2: #b2becd;
   --color-grey-3: #6c7983;
   --color-grey-4: #454e56;
@@ -674,6 +674,23 @@ section {
   align-items: center;
   overflow: hidden;
 }
+.main-btn .form-submit-button {
+  background-color: transparent;
+  border: none;
+  text-shadow: none;
+  padding: 0 3rem;
+  display: flex;
+  font-size: 1.7rem;
+  font-family: inherit;
+  color: var(--color-white);
+}
+.main-btn .form-submit-button:hover {
+  background-color: transparent;
+  border: none;
+  text-shadow: none;
+  padding: 0 3rem;
+  display: flex;
+}
 .main-btn .btn-text {
   padding: 0 2rem;
 }
@@ -747,9 +764,6 @@ section {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
   }
-  .about-stats .progress-bars {
-    grid-template-columns: 1fr;
-  }
   .portfolios {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
@@ -769,19 +783,6 @@ section {
   }
   .main-title h2 .bg-text {
     font-size: 3rem;
-  }
-  .controls {
-    top: auto;
-    bottom: 0;
-    flex-direction: row;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    background-color: var(--color-grey-5);
-  }
-  .controls .control {
-    margin: 1rem 0.3rem;
   }
 }
 @media screen and (max-width: 1432px) {
@@ -861,5 +862,35 @@ section {
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controls .control {
+    margin: 0.6rem 1rem !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .section {
+    padding: 7rem 3rem;
+  }
+  .about-stats .progress-bars {
+    grid-template-columns: 1fr;
+  }
+  .main-title h2 {
+    font-size: 3rem;
+  }
+  .main-title h2 span {
+    font-size: 3rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 4rem;
   }
 }/*# sourceMappingURL=styles.css.map */
