@@ -22,7 +22,7 @@
 }
 
 .light-mode{
-    --color-primary: #ffffff;
+    --color-primary: #f8f9fb;
     --color-secondary: #f5e266d2;
     --color-white: #454e56;
     --color-black: #000;
@@ -445,6 +445,7 @@ section{
             height: 300px;
             object-fit: cover;
             border-radius: 15px;
+            box-shadow: 1px 1px 20px rgba(0,0,0,.1)
         }
         .hover-items{
             width: 100%;
@@ -536,7 +537,7 @@ section{
             transition: all .4s ease-in-out;
         }
         .blog-text{
-            margin-top: -7x;
+            margin-top: -7px;
             padding: 1.1rem;
             border-top: 8px solid var(--color-secondary);
             h4{
