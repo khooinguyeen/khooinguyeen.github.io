@@ -22,7 +22,7 @@
 }
 
 .light-mode {
-  --color-primary: #f8f9fb;
+  --color-primary: #ffffff;
   --color-secondary: #f5e266d2;
   --color-white: #454e56;
   --color-black: #000;
@@ -786,7 +786,7 @@ section {
     font-size: 3rem;
   }
   .contact-info .contact-item {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 1432px) {
