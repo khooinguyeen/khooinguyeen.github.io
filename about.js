@@ -11,16 +11,15 @@ function PageTransitions(){
     themeBtn.addEventListener('click',() =>{
         localStorage.setItem('theme', 'light')
         if(localStorage.getItem('theme') == 'light') {
-            document.body.classList.toggle('light-mode')
+            document.body.classList.toggle('light-theme')
         }
         else {
-            document.body.classList.toggle('dark-mode')
-            // localStorage.clear()
+            document.body.classList.toggle('dark-theme')
+            // localStorage.setItem('theme', 'dark')
         }
     });
     if(localStorage.getItem('theme') == 'light') {
-        document.body.classList.toggle('light-mode')
-        localStorage.clear()
+        document.body.classList.toggle('light-theme')
     }
 }
 
