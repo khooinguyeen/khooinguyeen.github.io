@@ -7,20 +7,23 @@ const allSections = document.querySelectorAll('.main-content')[0];
 
 function PageTransitions(){
     const themeBtn = document.querySelector('.theme-btn');
+    const element = document.body.classList;
     //Toggle theme
     themeBtn.addEventListener('click',() =>{
-        localStorage.setItem('theme', 'light')
         if(localStorage.getItem('theme') == 'light') {
-            document.body.classList.toggle('light-mode')
+            localStorage.clear()
+            element.remove('light-mode')
         }
         else {
-            document.body.classList.toggle('dark-mode')
-            // localStorage.clear()
+            localStorage.setItem('theme', 'light')
+            element.toggle('light-mode')
         }
     });
     if(localStorage.getItem('theme') == 'light') {
-        document.body.classList.toggle('light-mode')
-        localStorage.clear()
+        element.toggle('light-mode')
+    }
+    else {
+        element.remove('light-mode')
     }
 }
 

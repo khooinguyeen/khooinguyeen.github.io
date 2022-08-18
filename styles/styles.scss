@@ -21,22 +21,6 @@
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
 
-.dark-mode{
-    --color-primary: #191d2b;
-    --color-secondary: #239cffc9;
-    --color-white: #FFFFFF;
-    --color-black: #000;
-    --color-grey0: #f8f8f8;
-    --color-grey-1: #dbe1e8;
-    --color-grey-2: #b2becd;
-    --color-grey-3: #6c7983;
-    --color-grey-4: #454e56;
-    --color-grey-5: #2a2e35;
-    --color-grey-6: #12181b;
-    --br-sm-2: 14px;
-    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
-}
-
 .light-mode{
     --color-primary: #ffffff;
     --color-secondary: #f5e266d2;
@@ -167,7 +151,7 @@ section{
         &:hover{
             background-color: var(--color-grey-3);
                 i{
-                    color: var(--color-primary);
+                    color: var(--color-grey-2);
                 }
         }
     }
