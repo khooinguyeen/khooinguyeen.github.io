@@ -7,24 +7,26 @@ const allSections = document.querySelectorAll('.main-content')[0];
 
 function PageTransitions(){
     const themeBtn = document.querySelector('.theme-btn');
-    const element = document.body.classList;
+    const element = document.body;
     //Toggle theme
-    themeBtn.addEventListener('click',() =>{
-        if(localStorage.getItem('theme') == 'light') {
-            localStorage.clear()
-            element.remove('light-mode')
-        }
-        else {
-            localStorage.setItem('theme', 'light')
-            element.toggle('light-mode')
-        }
-    });
-    if(localStorage.getItem('theme') == 'light') {
-        element.toggle('light-mode')
+    if(localStorage.getItem('theme-button') == 'clicked') {
+        element.classList.toggle('light-mode')
     }
     else {
-        element.remove('light-mode')
+        element.classList.remove('light-mode')
     }
+    //Button
+    themeBtn.addEventListener('click',() =>{
+        if(localStorage.getItem('theme-button') == 'clicked') {
+            localStorage.clear()
+            element.classList.remove('light-mode')
+        }
+        else {
+            localStorage.setItem('theme-button', 'clicked')
+            element.classList.toggle('light-mode')
+        }
+    });
+
 }
 
 PageTransitions()
